@@ -3,6 +3,10 @@ git_source(:github){|repo| "https://github.com/#{repo}.git"}
 
 ruby "2.6.1"
 
+gem "draper"
+gem "bcrypt"
+gem "pry-rails"
+gem "config"
 gem "rails", "~> 5.2.4", ">= 5.2.4.4"
 gem "sqlite3"
 gem "puma", "~> 3.11"
