@@ -10,6 +10,7 @@ class UsersController < ApplicationController
   end
 
   def create
+    byebug
     register_form = RegisterForm.new register_params
     send_mail = SendMailActivationServices.new
     if register_form.perform_signup
